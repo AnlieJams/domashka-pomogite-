@@ -74,7 +74,7 @@ int main()
     
     setlocale(0, "");
 
-    int tiers, tierheight, count = 1, itemcount = 1, caras = 0, example = 2;;
+    int tiers, tierheight, number = 1, itemcount = 1, caras = 0, example = 2;;
    
     cout << "Просто введи два числа и всё (уровни и их высоту): ";
     
@@ -89,7 +89,7 @@ int main()
         {
             for (int j = 0; j < spacer; j++)
             {
-                std::cout << "  ";
+                cout << "  ";
             }
             spacer--;
 
@@ -97,12 +97,17 @@ int main()
             {
                 cout << "<>";
             }
+          
             itemcount += 2;
+          
             cout << "\n";
         }
         itemcount = 1 + example;
+       
         example += 2;
+       
         caras++;
+       
         spacer = reservespacer - caras;
     }
 
